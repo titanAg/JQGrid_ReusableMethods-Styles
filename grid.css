@@ -1,0 +1,73 @@
+/* jqGrid customizations */
+
+.grid-container { width: 95%; padding: 50px 0; }
+
+/* Outer jqgrid container */
+.ui-jqgrid.ui-jqgrid {
+    border: 1px solid #ddd;
+    -ms-border-radius: 6px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+}
+
+/* Control states */
+.ui-jqgrid.ui-jqgrid .ui-state-disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+}
+
+
+/* Table Caption (top bar) */
+.ui-jqgrid.ui-jqgrid .ui-jqgrid-caption {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: navy;
+    color: white;
+    padding: 18px 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.ui-jqgrid .ui-jqgrid-caption .ui-jqgrid-titlebar-close { right: 10px; }
+
+
+/* Pager options */
+.ui-pg-table,
+.ui-jqgrid .ui-pg-table .ui-pg-selbox,
+.ui-jqgrid .ui-pg-table .ui-pg-input { font-size: 12px; }
+
+.ui-jqgrid.ui-jqgrid .ui-pg-table { padding: 3px 5px; }
+
+.ui-jqgrid.ui-jqgrid .ui-pg-table .ui-pg-button {
+    margin: 0.2em 1em;
+    padding: 0.2em 0;
+    border: 2px solid transparent;
+    border-radius: 0.4em;
+}
+.ui-jqgrid.ui-jqgrid .ui-pg-table .ui-pg-button.ui-state-hover { border: 2px solid rgb(131, 140, 155); }
+
+.ui-jqgrid .ui-pg-table .ui-pg-selbox,
+.ui-jqgrid .ui-pg-table .ui-pg-input {
+    height: 22px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 0.3em;
+}
+
+
+/* Table (thead and tbody elements) */
+.ui-jqgrid.ui-jqgrid>.ui-jqgrid-view { font-size: 11px; }
+
+.ui-jqgrid .ui-jqgrid-htable th { background-color: rgb(212, 212, 212); }
+.ui-jqgrid .ui-jqgrid-htable th div.ui-jqgrid-sortable { padding: 10px 5px; }
+.ui-jqgrid .ui-jqgrid-htable th.ui-th-ltr.ui-state-hover { background-color: rgb(235, 235, 235); }
+
+.ui-jqgrid.ui-jqgrid tr.jqgfirstrow>td { height: 0%; } /* Fix to hide blank first row */
+.ui-jqgrid.ui-jqgrid tr.jqgrow td{ height: 3.5em; padding: 0 5px; text-overflow: ellipsis; }
+.ui-jqgrid.ui-jqgrid tr.jqgrow.ui-row-ltr>td { border-color:rgb(200, 200, 200); }
+
+.ui-jqgrid.ui-jqgrid .myAltRowClass,
+.ui-jqgrid.ui-jqgrid tr.myAltRowClass[aria-selected='false'] { background-color: rgb(212, 212, 212); } /* Stripped rows */
+.ui-jqgrid.ui-jqgrid tr.ui-state-hover,
+.ui-jqgrid.ui-jqgrid th.ui-state-hover,
+.ui-jqgrid.ui-jqgrid tr.ui-state-hover[aria-selected='false'],
+.ui-jqgrid.ui-jqgrid tr[aria-selected='true'] { background: rgb(206, 221, 243); }
